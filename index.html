@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROV_GUI</title>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/eventemitter2@6.4.9/lib/eventemitter2.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/roslib@1/build/roslib.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<h2>ROS_SUBSCRIBERS</h2>
+<h3>cmd_vel readings </h3>   
+<p id="vel_reading">no data recived from cmd_vel topic</p>
+<form action="">
+<h3>entring pid values</h3>
+<label for="pressure_values">enter values for kp ki kd of pressure</label>
+<input type="text" id="pressure_values" name="pressure_values">
+<input type="button" class="send values" id="send_pressure" value="send values">   
+<label for="yaw_values">//////enter values for kp ki kd of yaw</label>
+<input type="text" id="yaw_values" name="yaw_values">
+<input type="button" class="send values" id="send_yaw" value="send values"> 
+</form>
+</body>
+</html>
